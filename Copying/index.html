@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>模写コーディング</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.google.com/noto/specimen/Noto+Sans+JP">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+
+    <!-- scrollbutton -->
+    <div id="scrollButton" class="background">
+        <a href="">Top</a>
+    </div>
+
+    <div id="body">
+    <!-- ヘッダー -->
+    <header>
+        <nav id="nav-pc">
+                <a href="#profile" id="profile">MyProfile</a>
+                <div id="menu">
+                <a href="#title-about" id="about">About</a>
+                <a href="#works-div" id="works">Works</a>
+                </div>
+        </nav>
+    </header>
+    <section id="carousel-section">
+        <div class="carousel">
+            <div>
+                <img src="img/main.png" alt="カメラの写真" class="carouselImg">
+            </div>
+            <div>
+                <img src="img/main2.png" alt="カメラ用品の写真" class="carouselImg">
+            </div>
+            <div>
+                <img src="img/main3.png" alt="カメラと景色の写真" class="carouselImg">
+            </div>
+        </div>
+    </section>
+    
+    <article>
+        <!-- about -->
+        <section class="fade-in-section">
+            <h2 id="title">About</h2>
+            <div id="title-about">
+                <img id="about-img" src="img/about.png" alt="顔写真">
+                <div id="info">
+                    <p id="name">Kazuki Asahina</p>
+                    <ul>
+                      <li>25歳 長野県佐久市出身</li>
+                      <li>ソフトウェア業界でマーケティングに従事</li>
+                      <li>趣味はカメラ、愛機はCanon</li>
+                      <li>自然を撮影するのが好きで、海や山によく行く</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Works -->
+        <section class="fade-in-section">
+            <h2 id="title">Works</h2>
+
+            <div id="works-div">
+
+            <!-- モーダル -->
+              <div id="left" class="item">
+                <a href=""><img id="works-img" src="img/works1.png" alt="日本海"></a>
+                <p>新潟に訪れた際に、日本海の雄大さを魅了されて撮影した1枚</p>
+              </div>
+      
+              <!-- 左右に隙間を開けるために、"item_center"クラスを付与 -->
+              <div id="center" class="item item_center">
+                <a href=""><img id="works-img" src="img/works2.png" alt="冠雪した御嶽山"></a>
+                <p>地元長野の木曽町から撮影した、冠雪した御嶽山</p>
+              </div>
+      
+              <div class="item" id="right">
+                <a href=""><img id="works-img" src="img/works3.png" alt="京都の街並み"></a>
+                <p>京都で撮影した、明け方の古き良き日本の町並み</p>
+              </div>
+                <!-- モーダル終了 -->
+            </div>
+    
+        </section>
+        <!-- フッダー -->
+        <p id="footer">&copy;MyProfile. All rights reserved.</p>
+    </article>
+
+<!-- モーダル -->
+<div class="modal">
+    <img src="" class="big-img">
+    <a class="close-btn">✖</a>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
