@@ -1,0 +1,464 @@
+body{
+    
+    background-color: #f8e7eb;
+    font-family: "arial" ;
+    color: #645366;
+    margin: 0;
+}
+
+p{
+    font-family: "游ゴシック" ;
+    font-size: 16px;
+}
+
+a{
+    font-family: "游ゴシック" ;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* ヘッダー */
+
+h1 a{
+    font-size: 20px;
+    color: #645366;
+}
+
+header{
+    background-color: white;
+}
+
+#top{
+    display: flex;
+}
+
+.title{
+    margin: -10px 20px;
+    font-size: 40px;
+}
+
+.name{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 12%;
+    color: #b16c90;
+    font-size: 20px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#menu{
+    padding-top: 10px;
+    padding-left: 35%;
+}
+
+.menu{
+    text-decoration: none;
+    padding: 0;
+    margin-top: -5px;
+    
+}
+
+#top-img{
+    width: 100%;
+    height: auto;
+    vertical-align:top;
+}
+#top-sp {
+     display: none !important; 
+}
+
+/* title */
+h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 50px;
+    font-size: 36px;
+}
+
+/* about */
+
+.about{
+    text-align: left;
+    display: flex;
+    position: relative;
+    margin: 0 5% ;
+}
+
+#about-right{
+    flex-flow: column;
+}
+
+.flower{
+    height: 203px;
+    width: 158px;
+    bottom: 0;
+    margin-top: 30%; 
+}
+
+.about-png{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.about-name{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* My Favorite */
+#flex{
+    display: flex;
+    justify-content: center;
+}
+
+#flex p{
+    margin: 5px;
+}
+
+.flow{
+    flex-flow: column;
+    border-radius: 10px;
+    background-color: white;
+    text-align: left;
+    margin: 10px 30px;
+    margin-bottom: 40px;
+    width: 20%;
+    height: auto;
+}
+
+.flow img{
+    width: 100%;
+    height: auto;
+}
+
+.favorite-title{
+    font-weight: bold;
+}
+
+/* Hometown */
+#town{
+    text-align: center;
+    font-size: 18px;
+    background-color: #f6f8f9;
+    padding: 30px;
+    margin: 0 15%;
+    margin-top: 50px;
+
+}
+
+.born{
+    font-weight: bold;
+}
+
+#map iframe{
+    margin: 0 auto;
+}
+
+/* footer */
+#color{
+    margin-top: 8%;
+    text-align: center;
+    padding: 30px 0;
+    color: #eeedee;
+    background-color: #645366;
+    font-weight: bold;
+
+}
+
+#footer{
+    display: flex;
+    text-align: left;
+    padding-left: 15%;
+}
+
+li{
+    list-style: none;
+}
+
+li a:link{
+    color: #eeedee;
+}
+
+li a:visited{
+    color: #eeedee;
+}
+
+/* アイコン */
+.follow-me {
+    display: flex;
+    margin-left: 40%;
+  }
+  .follow-me li {
+    margin: 0 30px 30px 0;
+    padding: 0;
+  }
+  .follow-me li a::before {
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 16px;
+    height: 22px; /* Button height */
+    line-height: 22px; /* Button height */
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    text-align: center;
+    width: 22px; /* Button width */
+  }
+  .follow-me li a:hover::before {
+    opacity: 0.7;
+  }
+  .follow-me li a[href*="https://m.facebook.com/profile.php/?id=100080713465684"]::before       { background-color: none; content: "\f09a"; }
+  .follow-me li a[href*="https://instagram.com/belle_acccessories?igshid=MzMyNGUyNmU2YQ=="]::before      { background-color: none; content: "\f16d"; }
+  .follow-me li a[href*="https://twitter.com/satoko922552087"]::before        { background-color: none; content: "\f099"; }
+
+  
+ 
+  
+  /* 959px以下に適用されるCSS（タブレット用） */
+  @media screen and (max-width: 959px) {
+
+    body{
+        margin: 0;
+        min-width: 350px;
+    }
+
+	/* header */
+    #top-img{
+        display: none !important;
+    }
+
+    #menu{
+        flex-flow:wrap;
+        flex-flow: column;
+       text-align: left;
+       justify-content: flex-start;
+       padding: 10px;
+       padding-top: 30px;
+       padding-bottom: 30px;
+       padding-right: 10%;
+       justify-content: space-between;
+    }
+
+    #top-sp{
+        display: block !important;
+        width: 100%;
+        height: auto;
+    }
+
+    #top{
+        flex-flow: wrap;
+    }
+
+    h1 a{
+        font-size: 40px;
+    }
+
+    /* about */
+    .flower{
+        display: none !important;
+    }
+
+    .about{
+        flex-flow: column;
+    }
+
+    .about-png{
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    #about-right{
+        text-align: center;
+    }
+
+    /* My Favorite */
+    .flow{
+        width: 90%;
+        margin: 20px auto;
+        
+    }
+
+    #flex p{
+        margin: 10px;
+    }
+
+    #flex{
+        flex-flow: column;
+    }
+
+    /* Hometown */
+    #town{
+        margin: 0;
+    }
+
+    /* footer */
+    #footer p{
+        display: none !important;
+    }
+
+   .footer-title ul{
+    display: flex;
+    width: auto;
+    justify-content: center;
+   }
+
+   .footer-title li{
+    margin:10px;
+    flex-flow: wrap;
+   }
+
+   #footer{
+    padding: 0;
+    flex-flow: column;
+   }
+
+   .follow-me {
+    margin: 0 auto;
+   }
+
+    /* ハンバーガーメニュー */
+  ::before , ::after {
+	box-sizing: inherit;
+}
+button {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	color: inherit;
+	vertical-align: middle;
+	text-align: inherit;
+	font: inherit;
+	-webkit-appearance: none;
+	appearance: none;
+}
+/**************** 以下、ハンバーガーボタンのスタイリング ****************/
+.btn {
+	/* ボタンの配置位置  */
+	position: fixed;
+	top: 32px;
+	right: 16px;
+	/* 最前面に */
+	z-index: 10;
+	/* ボタンの大きさ  */
+	width: 48px;
+	height: 48px;
+}
+/***** 真ん中のバーガー線 *****/
+.btn-line {
+	display: block;
+	/* バーガー線の位置基準として設定 */
+	position: relative;
+	/* 線の長さと高さ */
+	width: 100%;
+	height: 4px;
+	/* バーガー線の色 */
+	background-color: #d6d5d5;
+	transition: .2s;
+    
+}
+/***** 上下のバーガー線 *****/
+.btn-line::before , .btn-line::after {
+	content: "";
+	/* 基準線と同じ大きさと色 */
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #d6d5d5;
+	transition: .5s;
+}
+.btn-line::before {
+	/* 上の線の位置 */
+	transform: translateY(-16px);
+}
+.btn-line::after {
+	/* 下の線の位置 */
+	transform: translateY(16px);
+}
+/***** メニューオープン時 *****/
+.btn-line.open {
+	/* 真ん中の線を透明に */
+	background-color: transparent;
+}
+.btn-line.open::before , .btn-line.open::after {
+	content: "";
+	background-color: #333;
+	transition: .2s;
+}
+.btn-line.open::before {
+	/* 上の線を傾ける */
+	transform: rotate(45deg);
+}
+.btn-line.open::after {
+	/* 上の線を傾ける */
+	transform: rotate(-45deg);
+}
+/**************** ここまで、ハンバーガーボタンのスタイリング ****************/
+/**************** 以下、メニューのスタイリング ****************/
+.menu {
+	/* メニューを縦に */
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+    font-size: 40px;
+    text-align: center;
+    padding: 0;
+	/* メニューの位置マイナス指定で画面外に */
+	right: -200%;
+	height: 35vh;
+	background-color: #f8e7eb;
+    border:solid;
+    border-color: black;
+	color: #efefef;
+	transition: .3s;
+    z-index: 10;
+}
+.menu-list {
+	/* メニューテキスト位置をリスト内中心に */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+.menu-list:hover {
+	background-color: rgba(255, 255, 255, .5);
+	color: #333;
+	cursor: pointer;
+	transition: .3s;
+}
+/***** メニューオープン時位置0にして画面内に *****/
+.menu.open {
+	position: fixed;
+	right: 0;
+}
+
+}
+
+/* 960px以上はハンバーガーボタン非表示、ヘッダー固定 */
+@media screen and (min-width: 960px) {
+	.btn {
+		display: none;
+	}
+	.menu {
+		/* メニューを横に */
+		display: flex;
+		flex-direction: row;
+		position: static;
+		top: 0;
+		right: 0;
+		height: 0;
+	}
+}
+
+
+
